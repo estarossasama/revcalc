@@ -1,0 +1,48 @@
+<!--
+	Author       : Ridho Reynaldo
+	Resource     : Github https://github.com/ridhoreynaldo
+    Instagram    : instagram.com/ridho_reynaldo
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--, shrink-to-fit=no, user-scalable=no-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Hello World">
+    <meta name="description" content="Learning">
+    <meta name="keywords" content="Learning">
+
+    <title>Hello World</title>
+</head>
+    <body>
+        <script type ="text/javascript">
+        var kalkulasi = (a,op,b) =>{
+            if (op == "+")
+            c = parseInt(a) + parseInt(b);
+            else if(op == "-")
+            c = parseInt(a) - parseInt(b);
+            else if(op == "/")
+            c = parseInt(a) / parseInt(b);
+            else if(op == "*")
+            c = parseInt(a) * parseInt(b);
+            else if(op == "%")
+            c = parseInt(a) % parseInt(b);
+            else if(op == "**")
+            c = parseInt(a) ** parseInt(b);
+            else if(op != "+" || "-" || "/" || "*" || "%" || "**")
+            c = "Operator salah";
+            return c;
+        }
+
+        var a1 = prompt("masukkan nilai pertama",);
+        var op1 = prompt("masukkan operator",);
+        var b1 = prompt("masukkan nilai kedua",);
+        var c1 = kalkulasi(a1,op1,b1);
+        alert(`${a1} ${op1} ${b1} = ${c1}`);
+        </script>
+    </body>
+</html>
